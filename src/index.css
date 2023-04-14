@@ -1,3 +1,7 @@
+#root{
+  height:100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,155 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  background-color: black;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.text-overlay{
+  position: absolute;
+  top:50%;
+  left:50%;
+  color: white;
+  font-size: 100px;
+  margin:0;
+  transform: translate(-50%, -50%);
+
+}
+
+.head-container{
+  width:100%;
+  
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  height: 500px;
+  background-color: #98957e;
+}
+
+.head-container img{
+  /*height: calc(100px - (10000px*var(--scroll)));*/
+  position: relative;
+  transform: translateY(-50%);
+  top:350px;
+
+}
+
+
+
+blockquote {
+  font-family: degular,serif;
+  padding: 30px 0;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  text-align: center;
+  font-size: 1.5rem!important;
+  line-height: 1.2!important;
+  margin-bottom: 30px;
+
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+ 
+  z-index: 1;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.navbar a {
+  padding-top: 50px;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 10px;
+  display: inline-block;
+  
+}
+
+.navbar a:hover {
+  color: #f00;
+}
+
+.small-card{
+ display: inline-block;
+
+  perspective: 500px;
+  
+}
+
+.small-card img{
+  transform:rotateY(15deg);
+  transition: transform 0.5s;
+
+}
+
+.small-card img:hover{
+  transform: rotateY(30deg);
+
+}
+
+.card-textbox{
+  display: inline-block;
+  background-color: white;
+  color:black;
+  width:500px;
+  height: 100%;
+  top:0px;
+  position: absolute;
+}
+
+.row{
+  height:500px;
+  width:100%;
+  position: relative;
+}
+
+.logo {
+  width: 109px;
+  height: 19px;
+  background-image: url(https://web.archive.org/web/20180715011034im_/http://l-u-n-a.com/img/luna-logo.png);
+  display: block;
+  position: absolute;
+ margin: 10px;
+  left:10px;
+}
+
+
+.about{
+  width:100px;
+  height:100px;
+
+}
+
+.by-line{
+  width:500px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 20px;
+  color: white;
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.by-line li{
+  margin: 5px;
+}
+
+li{
+  list-style-type: none;
+  font-size: medium;
 }

@@ -1,0 +1,22 @@
+
+.about-row{
+    width:100%;
+    height:3%;
+    overflow: hidden;
+}
+.about-row img {
+    width: 100%;
+}
+
+.about-body blockquote{
+background-color: transparent;
+position: absolute;
+}
+
+.about-body p{
+position: absolute;
+font-size: xx-large;
+width: 30%;
+left:50%;
+transform: translateX(-50%);
+}
