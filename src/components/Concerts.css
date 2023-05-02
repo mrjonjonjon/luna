@@ -1,0 +1,32 @@
+.concerts{
+    width:100%;
+    height: 1000px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.concerts .accordion{
+
+    width:95%;
+    height: 20%;
+    background-color: gray;
+    
+    
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+  }
+.concerts .accordion .panel{
+display: none;
+height: fit-content;
+background-color: brown;
+}
+.concerts .accordion li{
+
+    height: 20%;
+    background-color: blue;
+    margin: 5px;
+}

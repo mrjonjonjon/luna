@@ -1,0 +1,30 @@
+.music-card{
+   
+   
+   
+  
+    
+   transform: scale(0.95);
+    transform-origin: top left;
+   
+    
+    
+    background-color: rgb(100, 156, 15);
+    border-radius: 12px;
+    padding: 1%;
+    margin: 1%;
+    flex-basis: 90%;
+    
+}
+
+.music-card .header{
+    width: 100%;
+   
+    font-size: xx-large;
+    font-weight: bolder;
+    margin:5px; 
+    text-align: center;
+}
+.music-card iframe{
+   
+}

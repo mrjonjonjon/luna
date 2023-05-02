@@ -1,5 +1,12 @@
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%
+}
 #root{
   height:100%;
+  position: relative;
 }
 
 body {
@@ -19,16 +26,7 @@ code {
     monospace;
 }
 
-.text-overlay{
-  position: absolute;
-  top:50%;
-  left:50%;
-  color: white;
-  font-size: 100px;
-  margin:0;
-  transform: translate(-50%, -50%);
 
-}
 
 .head-container{
   width:100%;
@@ -37,15 +35,18 @@ code {
   overflow: hidden;
   display: inline-block;
   text-align: center;
-  height: 500px;
+  height: 40vh;
   background-color: #98957e;
 }
 
 .head-container img{
   /*height: calc(100px - (10000px*var(--scroll)));*/
-  position: relative;
+  position: absolute;
   transform: translateY(-50%);
-  top:350px;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  height: 90%;
 
 }
 
@@ -73,6 +74,7 @@ blockquote {
   z-index: 1;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 
 }
 
@@ -125,11 +127,12 @@ blockquote {
 }
 
 .logo {
-  width: 109px;
-  height: 19px;
+  width: 5%;
+  background-repeat: no-repeat;
+  background-size: 100%;
   background-image: url(https://web.archive.org/web/20180715011034im_/http://l-u-n-a.com/img/luna-logo.png);
   display: block;
-  position: absolute;
+
  margin: 10px;
   left:10px;
 }

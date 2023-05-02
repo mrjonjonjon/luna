@@ -5,28 +5,44 @@ import Bg from "./components/bg";
 import Header from './components/Header';
 import Vlogs from './components/Vlogs';
 import Music from './components/Music'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import VideoHeader from './components/VideoHeader';
 import About from './components/About';
 import NavBar from './components/NavBar';
+import Concerts from './components/Concerts';
+import MusicCard from './components/MusicCard';
+
+import AnimatedBg from './components/AnimatedBg';
 function App() {
  
-  return (<BrowserRouter>
+  return (<HashRouter>
 
                 <Routes>
                   <Route path="/" element={<Header />}/>
                   
 
-                    <Route path="/concerts" element={<><VideoHeader link="https://www.youtube.com/embed/OosADmqfj3c?autoplay=1&mute=1&controls=0&loop=1&start=145"/></>}/>
+                    <Route path="/concerts" element={<>
+                            <VideoHeader link="https://www.youtube.com/embed/OosADmqfj3c?autoplay=1&mute=1&controls=0&loop=1&start=145&cc_load_policy=3"/>
+                            <div className='content'>
+                              <Concerts/>
+                            </div>
+                            
+                          </>}/>
 
 
-                      <Route path="/music" element={<><VideoHeader link="https://www.youtube.com/embed/SDCyy8JLAt4?autoplay=1&mute=1&controls=0&loop=1"/><Music/></>} />
+                      <Route path="/music" element={<>
+                      <VideoHeader link="https://www.youtube.com/embed/SDCyy8JLAt4?autoplay=1&mute=1&controls=0&loop=1&cc_load_policy=3"/>
+                      <div className='content'>
+                         <Music/>
+                      </div>
+                     
+                      </>} />
                       <Route path="/about" element={<><NavBar/><About/></>} />
 
                 </Routes>
          
-         </BrowserRouter>);
+         </HashRouter>);
 
         
     (
