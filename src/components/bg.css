@@ -73,6 +73,6 @@
   }
   
   .grid  * {
-    filter: grayscale(100%);
+    filter: grayscale(100%) blur(2px);;
   }
   

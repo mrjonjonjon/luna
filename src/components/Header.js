@@ -17,7 +17,7 @@ function Header(){
                     <h1 className="text-overlay" style={{pointerEvents:'none'}}>ЛУНА</h1>
                     <h1 className='by-line'><li>Photographer</li> <li>Singer</li><li>Model</li></h1>
             </div>
-            <AnimatedBg/>
+           <AnimatedBg/>
             
             
                 <Outlet />

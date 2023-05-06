@@ -14,12 +14,16 @@ import Concerts from './components/Concerts';
 import MusicCard from './components/MusicCard';
 
 import AnimatedBg from './components/AnimatedBg';
+import NewsItem from './components/NewsItem';
 function App() {
  
   return (<HashRouter>
 
                 <Routes>
-                  <Route path="/" element={<Header />}/>
+                  <Route path="/" element={
+                      <>
+                            <Header/> <NewsItem/> <NewsItem/> <NewsItem/> <NewsItem/>
+                      </>}/>
                   
 
                     <Route path="/concerts" element={<>

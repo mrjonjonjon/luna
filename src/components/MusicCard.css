@@ -2,29 +2,32 @@
    
    
    
-  
-    
-   transform: scale(0.95);
-    transform-origin: top left;
+  display: flex;
+
    
     
     
-    background-color: rgb(100, 156, 15);
+    background-color: rgba(100, 156, 15, 0);
     border-radius: 12px;
-    padding: 1%;
+   
     margin: 1%;
-    flex-basis: 90%;
+    height: 20vh;
+   
     
 }
 
 .music-card .header{
     width: 100%;
-   
     font-size: xx-large;
     font-weight: bolder;
     margin:5px; 
     text-align: center;
+    height: fit-content;
 }
 .music-card iframe{
-   
+  width: 100%;
+  overflow: hidden;
+  max-height: 80px;
+
+ 
 }
