@@ -9,6 +9,7 @@
 }
 .news-item .news-text{
     margin: 3%;
+    overflow-wrap: break-word;
 }
 .news-item .news-image-container img{
     width:85%;
