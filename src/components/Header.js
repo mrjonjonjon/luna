@@ -13,7 +13,7 @@ function Header(){
 
             <div className="head-container">
                 <Bg/>
-                    <img src="/images/7066.jpeg" style={{pointerEvents:'none'}} alt="luna" height="100%"/>
+                    <img src="images/7066.jpeg" style={{pointerEvents:'none'}} alt="luna" height="100%"/>
                 
                     <h1 className="text-overlay" style={{pointerEvents:'none'}}>ЛУНА</h1>
                     <h1 className='by-line'><li>Photographer</li> <li>Singer</li><li>Model</li></h1>

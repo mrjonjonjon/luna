@@ -1,7 +1,7 @@
 {
   "name": "luna-fansite",
   "version": "0.1.0",
-  "homepage": "https://mrjonjonjon.github.io/react-gh-pages",
+  "homepage": "https://mrjonjonjon.github.io/luna",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

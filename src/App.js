@@ -20,7 +20,7 @@ function App() {
   return (<HashRouter>
 
                 <Routes>
-                  <Route path="/" element={
+                  <Route path="/" basename={process.env.PUBLIC_URL} element={
                       <>
                             <Header/> <NewsItem/> <NewsItem/> <NewsItem/> <NewsItem/>
                       </>}/>
