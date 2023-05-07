@@ -3,6 +3,7 @@ import { Outlet,Link } from 'react-router-dom';
 import './Header.css';
 import NavBar from './NavBar.js';
 import AnimatedBg from './AnimatedBg.js';
+import SpiralBg from './SpiralBg.js';
 function Header(){
     return  <>
 
@@ -17,7 +18,7 @@ function Header(){
                     <h1 className="text-overlay" style={{pointerEvents:'none'}}>ЛУНА</h1>
                     <h1 className='by-line'><li>Photographer</li> <li>Singer</li><li>Model</li></h1>
             </div>
-           <AnimatedBg/>
+           <SpiralBg/>
             
             
                 <Outlet />

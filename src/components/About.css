@@ -4,19 +4,27 @@
     height:3%;
     overflow: hidden;
 }
-.about-row img {
+.about-body img {
     width: 100%;
+    position: absolute;
 }
-
+.about-body .bio-text{
+    width: 50%;
+    height: 30%;
+    margin: 10%;
+    top:500px;
+    position: absolute;
+}
 .about-body blockquote{
-background-color: transparent;
-position: absolute;
+    background-color: transparent;
+    position: absolute;
 }
 
-.about-body p{
-position: absolute;
-font-size: xx-large;
-width: 30%;
-left:50%;
-transform: translateX(-50%);
+.about-body div{
+    position: absolute;
+    font-size: small;
+    width: 80%;
+    margin: auto;
+   
+
 }
