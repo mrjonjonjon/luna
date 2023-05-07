@@ -1,6 +1,7 @@
 import Bg from './bg.js';
 import { Outlet,Link } from 'react-router-dom';
 import './Header.css';
+import './NavBar.css'
 function NavBar(){
     return  <>
                 <nav className="navbar">

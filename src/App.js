@@ -21,9 +21,13 @@ function App() {
 
                 <Routes>
                   <Route path="/" basename={process.env.PUBLIC_URL} element={
-                      <>
+                      <> 
+                      <div style={{width:'100%'}}>
                             <Header/> <NewsItem/> <NewsItem/> <NewsItem/> <NewsItem/>
-                      </>}/>
+                      </div>
+                           
+                      </>
+                    }/>
                   
 
                     <Route path="/concerts" element={<>
