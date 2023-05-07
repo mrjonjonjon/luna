@@ -5,7 +5,7 @@ function About(){
     return  <>
                 <div className='about-body'>
                    {/* <div className='about-row'>*/}
-                            <img src="/images/luna-1.webp"/>
+                            <img src="images/luna-1.webp"/>
                     {/*</div>*/}
 
                     <blockquote>the Face of Ukraine’s Musical Revolution </blockquote>
