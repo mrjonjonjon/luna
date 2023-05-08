@@ -24,6 +24,8 @@ margin-left: auto;
     left: 0;
     top:0;
     margin: 5%;
+    font-family: "Lucida Console", "Courier New", monospace;
+
 }
 .about-content .bio-text{
     width: 100%;
