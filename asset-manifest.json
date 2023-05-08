@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/luna/static/css/main.b28e27ec.css",
-    "main.js": "/luna/static/js/main.ea86ae06.js",
+    "main.css": "/luna/static/css/main.ad37f6b2.css",
+    "main.js": "/luna/static/js/main.7e219a99.js",
     "static/js/787.24cd6be6.chunk.js": "/luna/static/js/787.24cd6be6.chunk.js",
     "static/media/logo.svg": "/luna/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/luna/index.html",
-    "main.b28e27ec.css.map": "/luna/static/css/main.b28e27ec.css.map",
-    "main.ea86ae06.js.map": "/luna/static/js/main.ea86ae06.js.map",
+    "main.ad37f6b2.css.map": "/luna/static/css/main.ad37f6b2.css.map",
+    "main.7e219a99.js.map": "/luna/static/js/main.7e219a99.js.map",
     "787.24cd6be6.chunk.js.map": "/luna/static/js/787.24cd6be6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b28e27ec.css",
-    "static/js/main.ea86ae06.js"
+    "static/css/main.ad37f6b2.css",
+    "static/js/main.7e219a99.js"
   ]
 }
