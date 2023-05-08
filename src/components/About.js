@@ -7,8 +7,11 @@ function About(){
                    {/* <div className='about-row'>*/}
                             <img src="images/luna-1.webp"/>
                     {/*</div>*/}
-
-                    <blockquote>the Face of Ukraine’s Musical Revolution </blockquote>
+                    <div className='about-content'>
+                        <div className='quote-wrapper'>
+                        <blockquote>the Face of Ukraine’s Musical Revolution </blockquote>
+                    </div>
+                    
 
                     <div className='bio-text'>
                             <p>
@@ -25,6 +28,8 @@ function About(){
             
                 
                 </div>
+                    </div>
+                    
    
                 
             </>
