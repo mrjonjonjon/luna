@@ -11,6 +11,7 @@ export default function SpiralBg() {
   useEffect(() => {
     
     const canvas = canvasRef.current;
+    
     const regl = createREGL({
       canvas: canvas,
       onDone: function(error, regl) {
@@ -20,6 +21,7 @@ export default function SpiralBg() {
     reglRef.current = regl;
     
     const draw = regl({
+        //https://tympanus.net/Development/ScrollSpiral/
       frag:  `#define TWO_PI 6.2831853072
       #define PI 3.14159265359
   
@@ -33,9 +35,9 @@ export default function SpiralBg() {
   
       const float timescale = 0.15;
       const float displace = 0.03;
-      const float gridSize = 20.0;
+      const float gridSize = 50.0;//20
       const int layers = 3;
-      const float detail = 2.0;
+      const float detail = 1.0;
       const float wave = 1.0;
   
       vec2 rotate(vec2 v, float angle) {
@@ -84,7 +86,8 @@ export default function SpiralBg() {
       }
   
       void main(void) {
-          vec2 tx = (gl_FragCoord.xy / resolution.xy - 0.5) * vec2(aspect, 1.0) * 2.0;
+          
+          vec2 tx = (gl_FragCoord.xy / (resolution.xy) - 0.5) * vec2(aspect, 1.0) * 2.0;
           float time = globaltime * timescale - scroll;
           float invScroll = 1.0 - scroll;
           float rgb[3];
@@ -121,17 +124,18 @@ export default function SpiralBg() {
     
     function handleFrame(ctx) {
       const { viewportWidth, viewportHeight, time } = ctx;
-      const aspect =canvas.scrollWidth / canvas.scrollHeight;
-      canvas.width = 512 * aspect;
-      canvas.height = 1000;
+      const aspect =canvas.scrollWidth / (canvas.scrollHeight);
+      canvas.width = 10000*aspect;
+      canvas.height=10000;
+
       scroll = window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight);
-      // velocity = velocity * 0.99 + (scroll - lastScroll);
+       velocity = velocity * 0.99 + (scroll - lastScroll);
       velocity = 0;
       lastScroll = scroll;
       regl.clear({ color: [0, 0, 0, 0] });
       draw({
         globaltime: time,
-        resolution: [viewportWidth, viewportHeight],
+        resolution: [viewportWidth,viewportHeight],
         aspect: aspect,
         scroll: scroll,
         velocity: velocity
