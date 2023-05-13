@@ -1,24 +1,21 @@
-import Bg from './bg.js';
+import BackgroundCollage from '../BackgroundCollage/BackgroundCollage.js';
 import { Outlet,Link } from 'react-router-dom';
 import './Header.css';
-import NavBar from './NavBar.js';
-import AnimatedBg from './AnimatedBg.js';
-import SpiralBg from './SpiralBg.js';
+import NavBar from '../NavBar/NavBar.js';
+import AnimatedBg from '../AnimatedBg/AnimatedBg.js';
+import SpiralBg from '../SpiralBackground/SpiralBg.js';
 function Header(){
     return  <>
-
-
-
               <NavBar/>
 
             <div className="head-container">
-                <Bg/>
+                <BackgroundCollage/>
                     <img src="images/7066.jpeg" style={{pointerEvents:'none'}} alt="luna" height="100%"/>
                 
                     <h1 className="text-overlay" style={{pointerEvents:'none'}}>ЛУНА</h1>
                     <h1 className='by-line'><li>Photographer</li> <li>Singer</li><li>Model</li></h1>
             </div>
-           <SpiralBg/>
+         
             
             
                 <Outlet />

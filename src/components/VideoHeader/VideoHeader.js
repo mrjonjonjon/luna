@@ -1,7 +1,7 @@
-import Bg from './bg.js';
+
 import { Outlet,Link } from 'react-router-dom';
 import './VideoHeader.css';
-import NavBar from './NavBar.js';
+import NavBar from '../NavBar/NavBar.js';
 function VideoHeader({link}){
     return  <>
                <NavBar/>

@@ -1,4 +1,4 @@
-import './bg.css'
+import './BackgroundCollage.css'
 function bg(){
     return <>
     <div class="grid">

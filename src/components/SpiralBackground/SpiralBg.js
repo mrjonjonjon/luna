@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import createREGL from 'regl';
-import Bg from './bg.js';
+import Bg from '../BackgroundCollage/BackgroundCollage.js';
 import './SpiralBg.css'
 export default function SpiralBg() {
   const canvasRef = useRef(null);

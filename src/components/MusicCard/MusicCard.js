@@ -1,5 +1,4 @@
-import '../index.css';
-import '../App.css';
+
 import './MusicCard.css';
 export default function MusicCard(){
 

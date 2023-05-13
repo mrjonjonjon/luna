@@ -1,42 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
 import './index.css';
-import Bg from "./components/bg";
-import Header from './components/Header';
-import Vlogs from './components/Vlogs';
-import Music from './components/Music'
+import Bg from "./components/BackgroundCollage/BackgroundCollage";
+import Music from './pages/Music'
 import {HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 import ReactDOM from "react-dom/client";
-import VideoHeader from './components/VideoHeader';
-import About from './components/About';
-import NavBar from './components/NavBar';
-import Concerts from './components/Concerts';
-import MusicCard from './components/MusicCard';
-
-import AnimatedBg from './components/AnimatedBg';
-import NewsItem from './components/NewsItem';
+import VideoHeader from './components/VideoHeader/VideoHeader';
+import About from './components/About/About';
+import NavBar from './components/NavBar/NavBar';
+import MusicCard from './components/MusicCard/MusicCard';
+import Home from './pages/Home';
+import Concerts from './pages/Concerts';
+import AnimatedBg from './components/AnimatedBg/AnimatedBg';
+import NewsItem from './components/NewsItem/NewsItem';
 function App() {
  
   return (<HashRouter>
 
                 <Routes>
                   <Route path="/" basename={process.env.PUBLIC_URL} element={
-                      <> 
-                      <div style={{width:'100%',position:'relative',overflowX:'hidden'}}>
-                            <Header/> <NewsItem/> <NewsItem/> <NewsItem/> <NewsItem/>
-                      </div>
-                           
-                      </>
+                     <Home/>
                     }/>
                   
 
-                    <Route path="/concerts" element={<>
-                            <VideoHeader link="https://www.youtube.com/embed/OosADmqfj3c?autoplay=1&mute=1&controls=0&loop=1&start=145&cc_load_policy=3"/>
-                            <div className='content'>
-                              <Concerts/>
-                            </div>
-                            
-                          </>}/>
+                    <Route path="/concerts" element={<Concerts/>}/>
 
 
                       <Route path="/music" element={<>

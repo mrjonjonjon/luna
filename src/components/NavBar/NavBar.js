@@ -1,6 +1,6 @@
-import Bg from './bg.js';
+import Bg from '../BackgroundCollage/BackgroundCollage.js';
 import { Outlet,Link } from 'react-router-dom';
-import './Header.css';
+
 import './NavBar.css'
 function NavBar(){
     return  <>

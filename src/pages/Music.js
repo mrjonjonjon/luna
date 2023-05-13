@@ -1,6 +1,6 @@
 import '../index.css';
 import '../App.css';
-import MusicCard from './MusicCard';
+import MusicCard from '../components/MusicCard/MusicCard';
 export default function Music(){
 
     return <>
