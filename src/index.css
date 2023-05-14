@@ -101,16 +101,6 @@ blockquote {
   position: relative;
 }
 
-.logo {
-  width: 5%;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-image: url(https://web.archive.org/web/20180715011034im_/http://l-u-n-a.com/img/luna-logo.png);
-  display: block;
-
- margin: 10px;
-  left:10px;
-}
 
 
 .about{

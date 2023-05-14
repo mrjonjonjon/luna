@@ -1,11 +1,12 @@
 import Bg from '../BackgroundCollage/BackgroundCollage.js';
 import { Outlet,Link } from 'react-router-dom';
 import './About.css';
+import backgroundimage from '../../images/luna-1.webp';
 function About(){
     return  <>
                 <div className='about-body'>
                    {/* <div className='about-row'>*/}
-                            <img src="images/luna-1.webp"/>
+                            <img src={backgroundimage}/>
                     {/*</div>*/}
                     <div className='about-content'>
                         <div className='quote-wrapper'>
