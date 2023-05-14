@@ -9,8 +9,10 @@
    
     z-index: 1;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
+    
+
   }
   .navbar > * {
    text-align: center;
@@ -18,13 +20,28 @@
     text-decoration: none;
    
     display: inline-block;
-   font-size:  1vw;
-   width: fit-content
+
+   width:10%;
+  
+   flex-shrink: 1;
+
+
+    
+  }
+  .navbar .logo{    
+    box-sizing: border-box;
+    width: 10%;
+    left: 0;   
+  padding-left: 10px;
+  padding-right: 10px;
+  transform: scale(50%);
+
     
   }
   .navbar .logo img{
-    margin: auto;
-    text-align: center;
+    
+   
+    
   }
   
   
