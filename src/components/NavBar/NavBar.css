@@ -9,32 +9,35 @@
    
     z-index: 1;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
-    
+    column-gap: 3%;
 
   }
-  .navbar > * {
+  .navbar > :not(.logo) {
    text-align: center;
     color: #fff;
     text-decoration: none;
    
     display: inline-block;
 
-   width:10%;
+   width:5%;
   
-   flex-shrink: 1;
+   
+min-width:fit-content;
+box-sizing: border-box;
 
 
     
   }
   .navbar .logo{    
     box-sizing: border-box;
-    width: 10%;
+    width: 5%;
     left: 0;   
   padding-left: 10px;
   padding-right: 10px;
   transform: scale(50%);
+
 
     
   }
