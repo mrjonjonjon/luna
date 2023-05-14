@@ -10,27 +10,24 @@
     z-index: 1;
     display: flex;
     justify-content: space-evenly;
-    align-items: stretch;
-    
-  
+    align-items: center;
   }
-  .navbar .logo {
-   
-  
-  
-
-  }
-  
-  .navbar a {
+  .navbar > * {
    text-align: center;
     color: #fff;
     text-decoration: none;
-   /*padding: 5px;*/
-    margin:auto;
-    display: inline-block;
    
+    display: inline-block;
+   font-size:  1vw;
+   width: fit-content
     
   }
+  .navbar .logo img{
+    margin: auto;
+    text-align: center;
+  }
+  
+  
   
   .navbar a:hover {
     color: #f00;
